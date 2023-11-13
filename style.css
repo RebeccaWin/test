@@ -1,0 +1,553 @@
+@charset "UTF-8";
+body {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .profile-pic {
+    width: 50%;
+  }
+}
+.bold {
+  font-weight: 600;
+}
+
+#content1::after {
+  content: "\a";
+  white-space: pre;
+}
+
+/* HEADER */
+header {
+  background-color: white;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 100;
+  width: 100vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.headerwrap {
+  display: flex;
+  justify-content: space-between; /* Spacing between logo and navbar */
+  align-items: center; /* Center vertically */
+  margin-left: 24%;
+  margin-right: 26%;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+nav {
+  /* Styles for the navbar container (right side) */
+}
+
+nav a {
+  text-decoration: none;
+  color: #2f2e2e;
+  margin: 0 10px; /* Add margin to separate navbar links */
+  font-size: 16px;
+  font-family: "heebo", sans-serif;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+.arrow-button:hover {
+  text-decoration: none;
+  color: #a782ec;
+}
+
+/* MAIN PAGE */
+.flex-section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+
+.textandbuttons-section1 {
+  flex: 0 0 46%;
+}
+
+.profilepic-section1 {
+  flex: 0 0 6%;
+}
+
+.h1-main {
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  color: #a782ec;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.h2-main {
+  color: #2f2e2e;
+  font-size: 42px;
+  font-family: "inter", sans-serif;
+  text-align: left;
+  line-height: 160%;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.p-main {
+  color: #2f2e2e;
+  font-size: 21px;
+  font-family: "inter", sans-serif;
+  text-decoration: none;
+  text-align: left;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+
+#mywork1 {
+  color: #2f2e2e;
+  font-family: "inter", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-decoration: none;
+  padding-left: 24%;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+
+.profile-pic {
+  width: 500px;
+  height: auto;
+  padding-top: 50px;
+}
+
+.buttons-section1 {
+  display: flex;
+  gap: 4%;
+}
+
+.mywork-button {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "heebo", sans-serif;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: #a782ec;
+  border: none;
+  cursor: pointer; /* Change the cursor on hover */
+  text-decoration: none;
+  width: auto; /* Set the button width to auto to fit the content */
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mywork-button:hover {
+  background-color: rgba(167, 130, 236, 0.7);
+}
+
+.letsconnect-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #a782ec;
+  font-family: "heebo", sans-serif;
+  font-weight: 500;
+  padding: 13px 30px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  border: 2px solid;
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content; /* Set the button width to auto to fit the content */
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.letsconnect-button img {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.letsconnect-button .linkedin-icon-hover {
+  display: none; /* Hide the hovered LinkedIn icon by default */
+}
+
+.letsconnect-button:hover {
+  background-color: rgba(167, 130, 236, 0.7); /* Change the background color on hover */
+  color: #ffffff;
+  border: 2px solid;
+}
+
+.letsconnect-button:hover .linkedin-icon {
+  display: none; /* Hide the original LinkedIn icon on hover */
+}
+
+.letsconnect-button:hover .linkedin-icon-hover {
+  display: inline; /* Display the hovered LinkedIn icon on hover */
+}
+
+.backtotop-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "heebo", sans-serif;
+  font-weight: 500;
+  padding: 15px 30px 15px 25px;
+  border-radius: 50px;
+  background-color: #a782ec;
+  cursor: pointer; /* Change the cursor on hover */
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+  width: fit-content;
+  margin-top: 4%;
+  margin-bottom: 9%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-backtotop {
+  display: flex;
+  justify-content: flex-end;
+  width: 76%;
+}
+
+.backtotop-button img {
+  width: 30px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.backtotop-button:hover {
+  background-color: rgba(167, 130, 236, 0.7);
+}
+
+.letsconnect-button img {
+  margin-left: 10px;
+  width: 25px;
+  height: auto;
+}
+
+.flexbox-articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5%;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+.flexbox-articles article {
+  flex: 0 0 25%;
+  padding-top: 1.5%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.flexbox-articles article:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.flexbox-articles article:hover .overlay-image, .flexbox-articles article:hover .text-container {
+  transform: translateX(30px); /* Move the image 5px to the right on hover */
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-with-text {
+  position: relative;
+}
+
+.image-with-text h4 {
+  color: #2f2e2e;
+  font-size: 24px;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1px;
+}
+
+.image-with-text p {
+  color: #2f2e2e;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 5px;
+  line-height: 130%;
+}
+
+.image-with-text a {
+  color: #2f2e2e;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.overlay-image, .text-container {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.overlay-image img, .text-container img {
+  width: 32px;
+  height: auto;
+}
+
+.text-container {
+  top: 5%;
+  left: 8%;
+  transform: none !important;
+}
+
+/*ABOUT ME*/
+.h1-aboutme {
+  font-family: "inter", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #2f2e2e;
+}
+
+.p-aboutme {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  font-size: 15px;
+  color: #2f2e2e;
+  margin-bottom: 20px; /* Add margin to separate paragraphs */
+}
+
+.flex-aboutme {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 24%;
+  padding-right: 24%;
+}
+
+.aboutme-textandbuttons-container {
+  text-align: left;
+  width: 30%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+}
+
+.picofme {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+
+.medancing {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  padding-top: 1%;
+}
+
+.buttons-aboutme {
+  display: flex;
+  gap: 4%;
+  margin-top: 12%;
+}
+
+/*SMÅTROLLENS FÖRÄLDRAKOOPERATIV PAGE*/
+.h1-smatrollen {
+  font-family: "inter", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #59715a;
+  margin-left: 24%;
+  margin-right: 24%;
+  text-align: left;
+}
+
+.h2-smatrollen {
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #394d3a;
+  margin-bottom: 5px;
+}
+
+.h3-smatrollen {
+  font-family: "inter", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2f2e2e;
+}
+
+.h4-prototype {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2f2e2e;
+}
+
+.p-smatrollen {
+  color: #2f2e2e;
+  text-align: left;
+  line-height: 140%;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nextproject-button {
+  text-align: right;
+  width: 76%;
+}
+
+.nextproject-button a {
+  color: #a782ec;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "inter", sans-serif;
+  text-decoration: underline;
+  transition: font-size 0.3s;
+  vertical-align: middle;
+}
+
+.nextproject-button img {
+  width: 42px;
+  height: auto;
+  transition: transform 0.5s;
+  vertical-align: middle;
+}
+
+.nextproject-button:hover a {
+  font-size: 22px; /* Increase the font size on hover */
+}
+
+.nextproject-button:hover img {
+  transform: translateX(30px); /* Move the image 5px to the right on hover */
+}
+
+.flex1-smatrollen {
+  display: flex;
+  flex-direction: row;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+
+.container-text {
+  flex: 0 0 26%;
+  width: 30%;
+}
+
+.container-video {
+  flex: 0 0 26%;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.container-image {
+  flex: 0 0 25%;
+  width: 50%;
+  height: auto;
+  justify-content: flex-end;
+}
+
+.flex-iconsandtext {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+
+.container-iconsandtext {
+  flex: 0 0 20%;
+}
+
+.container-iconsandtext p {
+  text-align: center;
+  line-height: 40%;
+}
+
+.container-iconsandtext img {
+  margin-left: 78px;
+  margin-top: 20px;
+}
+
+/*FOOTER*/
+.footer-title {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #2f2e2e;
+  margin-bottom: 20px; /* Adjust the margin to control spacing below the title */
+}
+
+.footer-text1 {
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #2f2e2e;
+  margin-bottom: 40px; /* Adjust the margin to control spacing below text1 */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Adjust the spacing between the images and text */
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-link img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s;
+  margin-bottom: 60px; /* Adjust the margin to control spacing below the image */
+}
+
+.footer-text2 {
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #2f2e2e;
+  margin-bottom: 110px;
+}
+
+.footer-link img:hover {
+  transform: scale(1.08);
+}
+
+footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

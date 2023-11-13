@@ -1,0 +1,989 @@
+$primary-color: #2f2e2e;
+
+.main-content {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+body {
+  background-color: white;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.number {
+  font-weight: 600;
+  font-family: "heebo";
+  color: #c3d1c3;
+  font-size: 72px;
+}
+
+#content1::after {
+  content: "\a";
+  white-space: pre;
+}
+
+/* HEADER */
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 100;
+  width: 100vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.headerwrap {
+  display: flex;
+  justify-content: space-between; /* Spacing between logo and navbar */
+  align-items: center; /* Center vertically */
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: $primary-color;
+  margin: 0 10px; /* Add margin to separate navbar links */
+  font-size: 16px;
+  font-family: "heebo", sans-serif;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+.arrow-button:hover {
+  text-decoration: none;
+  color: #a782ec;
+}
+
+/* MAIN PAGE */
+
+.flex-section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.textandbuttons-section1 {
+  width: 60%;
+}
+
+.h1-main {
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  color: #a782ec;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.h2-main {
+  color: $primary-color;
+  font-size: 42px;
+  font-family: "inter", sans-serif;
+  text-align: left;
+  line-height: 160%;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.p-main {
+  color: $primary-color;
+  font-size: 21px;
+  font-family: "inter", sans-serif;
+  text-decoration: none;
+  text-align: left;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+
+.h3-main {
+  color: $primary-color;
+  font-family: "inter", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+
+.profilepic-section1 {
+  width: 50%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+  padding-top: 10%;
+}
+
+.buttons-section1 {
+  display: flex;
+  gap: 4%;
+}
+
+.mywork-button {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "heebo", sans-serif;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: #a782ec;
+  border: none;
+  cursor: pointer; /* Change the cursor on hover */
+  text-decoration: none;
+  width: auto; /* Set the button width to auto to fit the content */
+  transition: background-color 0.3s, color 0.3s;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mywork-button:hover {
+  background-color: rgba(167, 130, 236, 0.7);
+}
+
+.letsconnect-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #a782ec;
+  font-family: "heebo", sans-serif;
+  font-weight: 500;
+  padding: 13px 30px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  border: 2px solid;
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content; /* Set the button width to auto to fit the content */
+  transition: background-color 0.3s, color 0.3s;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.letsconnect-button img {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.letsconnect-button .linkedin-icon-hover {
+  display: none; /* Hide the hovered LinkedIn icon by default */
+}
+
+.letsconnect-button:hover {
+  background-color: rgba(
+    167,
+    130,
+    236,
+    0.7
+  ); /* Change the background color on hover */
+  color: #ffffff;
+  border: 2px solid;
+}
+
+.letsconnect-button:hover .linkedin-icon {
+  display: none; /* Hide the original LinkedIn icon on hover */
+}
+
+.letsconnect-button:hover .linkedin-icon-hover {
+  display: inline; /* Display the hovered LinkedIn icon on hover */
+}
+
+.backtotop-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "heebo", sans-serif;
+  font-weight: 500;
+  padding: 15px 30px 15px 25px;
+  border-radius: 50px;
+  background-color: #a782ec;
+  cursor: pointer; /* Change the cursor on hover */
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+  width: fit-content;
+  margin-top: 4%;
+  margin-bottom: 9%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-backtotop {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.backtotop-button img {
+  width: 30px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.backtotop-button:hover {
+  background-color: rgba(167, 130, 236, 0.7);
+}
+
+.letsconnect-button img {
+  margin-left: 10px;
+  width: 25px;
+  height: auto;
+}
+
+.flexbox-articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  article {
+    padding-top: 1.5%;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.flexbox-articles article:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.flexbox-articles article:hover .overlay-image {
+  transform: translateX(30px); /* Move the image 5px to the right on hover */
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-with-text {
+  position: relative;
+  max-width: 50%;
+}
+
+.main-articles-img {
+  width: 95%;
+  height: auto;
+}
+
+.image-with-text h4 {
+  color: $primary-color;
+  font-size: 24px;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1px;
+}
+
+.image-with-text p {
+  color: $primary-color;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 5px;
+  line-height: 130%;
+}
+
+.image-with-text a {
+  color: $primary-color;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 28%;
+  left: 24%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.overlay-image img {
+  width: 40px;
+  height: auto;
+  max-width: 100%;
+}
+
+.text-container {
+  @extend .overlay-image;
+  top: 5%;
+  left: 8%;
+  transform: none !important;
+}
+
+/*ABOUT ME*/
+
+.h1-aboutme {
+  font-family: "inter", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: $primary-color;
+}
+
+.p-aboutme {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  font-size: 15px;
+  color: $primary-color;
+  margin-bottom: 20px; /* Add margin to separate paragraphs */
+}
+
+.flex-aboutme {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.aboutme-textandbuttons-container {
+  text-align: left;
+  width: 55%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  text-align: center;
+  padding-left: 120px;
+}
+
+.picofme {
+  max-width: 100%;
+  height: auto;
+  width: 350px;
+}
+
+.medancing {
+  max-width: 100%;
+  height: auto;
+  width: 325px;
+  padding-top: 5%;
+}
+
+.buttons-aboutme {
+  display: flex;
+  gap: 4%;
+  margin-top: 15%;
+}
+
+/*INTERNSHIP PAGE*/
+
+.h1-internship {
+  font-family: "inter", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: $primary-color;
+  text-align: left;
+  padding-top: 2%;
+  width: 50%;
+}
+
+.h2-internship {
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: $primary-color;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+.h2-internship-nr2 {
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: $primary-color;
+  padding-bottom: 2%;
+  padding-top: 5%;
+  margin: 0px;
+}
+
+.h4-internship {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: $primary-color;
+  padding-bottom: 10px;
+  margin: 15px 0px 0px 0px;
+}
+
+.p-internship {
+  color: $primary-color;
+  line-height: 140%;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.internship-prototyp {
+  width: 450px;
+  height: auto;
+  padding-left: 40%;
+  max-width: 100%;
+}
+
+.img-usabilitytest {
+  width: 500px;
+  height: auto;
+  padding-top: 10%;
+  padding-right: 0%;
+  padding-left: 35%;
+}
+
+.img-flowchart {
+  width: 500px;
+  height: auto;
+  padding-top: 50%;
+  padding-right: 0%;
+  padding-left: 35%;
+}
+
+.img-prototypes {
+  width: 400px;
+  height: auto;
+  padding-top: 6%;
+  padding-right: 4%;
+  padding-left: 10%;
+}
+
+.img-mobileapp {
+  width: 750px;
+  height: auto;
+  padding-top: 40%;
+  padding-left: 20%;
+  padding-right: 0;
+}
+
+/*SMÅTROLLENS FÖRÄLDRAKOOPERATIV PAGE*/
+
+.h1-smatrollen {
+  font-family: "inter", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #59715a;
+  text-align: left;
+  padding-top: 2%;
+}
+
+.h2-smatrollen {
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #394d3a;
+  padding-bottom: 1%;
+}
+
+.h3-smatrollen {
+  font-family: "inter", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: $primary-color;
+}
+
+.h4-prototype {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: $primary-color;
+  margin-bottom: 2px;
+}
+
+.p-smatrollen {
+  color: $primary-color;
+  line-height: 140%;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.smatrollen-prototyp {
+  width: 300px;
+  height: auto;
+  padding-top: 5%;
+  padding-left: 70%;
+  max-width: 100%;
+}
+
+.flex-smatrollen {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+.flex-smatrollen-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+.container-text-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container-text-lessonslearnt {
+  width: 100%;
+  padding-bottom: 3%;
+}
+
+.container-image {
+  width: 50%;
+}
+
+.container-image2 {
+  display: flex;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.flex-iconsandtext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.container-iconsandtext {
+  padding-bottom: 20%;
+  text-align: center;
+}
+
+.container-iconsandtext p {
+  line-height: 40%;
+}
+
+.container-iconsandtext img {
+  padding-top: 5%;
+  width: 35%;
+  height: auto;
+}
+
+.iphoneicon {
+  margin-top: 15px;
+}
+
+.nextproject-button {
+  text-align: right;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.nextproject-button a {
+  color: #a782ec;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "inter", sans-serif;
+  text-decoration: underline;
+  transition: font-size 0.3s;
+  vertical-align: middle;
+}
+
+.nextproject-button img {
+  width: 42px;
+  height: auto;
+  transition: transform 0.5s;
+  vertical-align: middle;
+}
+
+.nextproject-button:hover a {
+  font-size: 22px; /* Increase the font size on hover */
+}
+
+.nextproject-button:hover img {
+  transform: translateX(30px); /* Move the image 5px to the right on hover */
+}
+
+.img-school {
+  padding-top: 12%;
+  padding-left: 12%;
+  width: 490px;
+  height: auto;
+  max-width: 100%;
+}
+
+.img-desktop {
+  width: 430px;
+  height: auto;
+  max-width: 100%;
+  padding-top: 15%;
+  padding-right: 1%;
+  padding-left: 6%;
+}
+
+.img-brainstorming {
+  width: 430px;
+  height: auto;
+  max-width: 100%;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-left: 20%;
+}
+
+.img-designsystem {
+  width: 430px;
+  height: auto;
+  max-width: 100%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.img-mobil1 {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  padding-left: 8%;
+  padding-top: 14%;
+}
+
+.img-mobil2 {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  padding-left: 4%;
+  padding-top: 7%;
+}
+
+.img-mobil3 {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  padding-left: 4%;
+}
+
+.img-presentation {
+  width: 430px;
+  height: auto;
+  max-width: 100%;
+  padding-top: 10%;
+}
+
+/*FOOTER*/
+
+footer {
+  text-align: center;
+}
+
+.footer-title {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: $primary-color;
+  margin-bottom: 20px; /* Adjust the margin to control spacing below the title */
+}
+
+.footer-text1 {
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: $primary-color;
+  margin-bottom: 40px; /* Adjust the margin to control spacing below text1 */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Adjust the spacing between the images and text */
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-link img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s;
+  margin-bottom: 60px; /* Adjust the margin to control spacing below the image */
+}
+
+.footer-text2 {
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: $primary-color;
+  margin-bottom: 110px;
+}
+
+.footer-link img:hover {
+  transform: scale(1.08);
+}
+
+// MEDIA QUERY
+
+@media (max-width: 768px) {
+  .main-content {
+    margin: 0 5% 0 5%;
+  }
+
+  header {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .headerwrap {
+    margin: 0 5% 0 5%;
+  }
+
+  nav a {
+    margin: 0 4px; /* Add margin to separate navbar links */
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 60%;
+  }
+
+  .flex-section1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profilepic-section1 {
+    width: 100%;
+  }
+
+  .profile-pic {
+    width: 100%;
+    padding-top: 10%;
+  }
+
+  .textandbuttons-section1 {
+    width: 100%;
+  }
+
+  .h1-main {
+    font-size: 12px;
+  }
+
+  .h2-main {
+    font-size: 28px;
+  }
+
+  .p-main {
+    font-size: 15px;
+  }
+
+  .buttons-section1 {
+    width: 100%;
+  }
+
+  .mywork-button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .letsconnect-button {
+    font-size: 12px;
+    padding: 7px 20px;
+  }
+
+  .letsconnect-button img {
+    width: 20px;
+    margin-left: 5px;
+  }
+
+  #mywork1 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .flexbox-articles {
+    flex-direction: column;
+  }
+
+  .image-with-text {
+    max-width: 100%;
+  }
+
+  .main-articles-img {
+    width: 100%;
+  }
+
+  .image-with-text h4 {
+    font-size: 16px;
+    margin-bottom: 1px;
+  }
+
+  .image-with-text p {
+    font-size: 12px;
+    margin-top: 1px;
+  }
+
+  .image-with-text a {
+    font-size: 12px;
+  }
+
+  .overlay-image {
+    top: 28%;
+    left: 30%;
+  }
+
+  .overlay-image img {
+    width: 28px;
+  }
+
+  .text-container {
+    @extend .overlay-image;
+    top: 1%;
+    left: 8%;
+  }
+
+  .backtotop-button {
+    font-size: 12px;
+    padding: 10px 20px 10px 15px;
+  }
+  footer {
+    margin: 0 5% 0 5%;
+  }
+  .footer-title {
+    font-size: 24px;
+  }
+
+  .footer-text1 {
+    font-size: 16px;
+  }
+
+  .footer-link img {
+    width: 36px;
+  }
+
+  .h1-aboutme {
+    font-size: 36px;
+    margin: 5% 0 2% 0;
+  }
+
+  .flex-aboutme {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .aboutme-textandbuttons-container {
+    width: 100%;
+  }
+
+  .image-container {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0%;
+    padding-top: 20%;
+  }
+
+  .picofme,
+  .medancing {
+    width: 100%;
+  }
+
+  .flex-smatrollen {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flex-smatrollen-reverse {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container-text {
+    width: 100%;
+  }
+
+  .container-image {
+    width: 100%;
+  }
+
+  .h1-smatrollen {
+    font-size: 36px;
+  }
+
+  .smatrollen-prototyp {
+    width: 70%;
+    padding-top: 0%;
+    padding-left: 15%;
+    max-width: 100%;
+  }
+
+  .container-text-1 {
+    width: 100%;
+  }
+
+  .flex-iconsandtext {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container-iconsandtext {
+    padding-bottom: 10%;
+  }
+
+  .container-iconsandtext p {
+    line-height: 20%;
+  }
+
+  .container-iconsandtext img {
+    padding-top: 2%;
+    width: 15%;
+  }
+
+  .img-school,
+  .img-desktop,
+  .img-brainstorming,
+  .img-designsystem,
+  .img-mobil1,
+  .img-mobil2,
+  .img-mobil3,
+  .img-presentation {
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .main-content {
+    margin: 0 10% 0 10%;
+  }
+
+  .profile-pic {
+    width: 50%;
+  }
+
+  .flex-smatrollen {
+    flex-direction: column;
+    width: 50%;
+  }
+}
